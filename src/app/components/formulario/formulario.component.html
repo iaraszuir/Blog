@@ -1,0 +1,36 @@
+<h2 class="m-3">FORMULARIO</h2>
+
+<form [formGroup]="formulario" class="m-3" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label class="form-label">Title</label>
+        <input type="text" class="form-control" formControlName="title">
+    </div>
+
+    <div>
+        <label class="form-label">Body</label>
+        <input type="text" class="form-control" formControlName="body">
+    </div>
+
+    <div>
+        <label class="form-label">Author</label>
+        <input type="text" class="form-control" formControlName="author">
+    </div>
+
+    <div>
+        <label class="form-label">Image</label>
+        <input type="text" class="form-control" formControlName="image">
+    </div>
+
+    <div>
+        <label class="form-label">Category</label>
+        <input type="text" class="form-control" formControlName="category">
+    </div>
+
+    <div>
+        <label class="form-label">Created At</label>
+        <input type="date" class="form-control" formControlName="createdAt">
+    </div>
+
+    <input class="btnEnviar" type="submit" value="Enviar">
+</form>

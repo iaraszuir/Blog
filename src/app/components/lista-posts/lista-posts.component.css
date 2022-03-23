@@ -1,0 +1,26 @@
+
+.servicios{
+    display: flex;
+    
+
+}
+.servicio{
+
+    background-color: brown;
+    padding: 20px;
+    border: 5px solid coral;
+}
+.servicio h3{
+    color: coral;
+    padding: 10px;
+}
+.servicio blockquote{
+    color: coral;
+}
+.servicio img{
+    width: 100%;
+    border: 2px solid coral;
+}
+select{
+    border:1px solid coral
+}

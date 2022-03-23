@@ -1,0 +1,17 @@
+<div class="container fluid">
+    <select class="form-select m-3" (change)="onChange($event)">
+        <option value="alimentacion">Alimentacion</option>
+        <option value="novedades">Novedades</option>
+    </select>
+    <div class="servicios d-flex">
+
+        <div class="servicio col-6 m-2" *ngFor="let servicio of servicios">
+            <h3>{{servicio.title}}</h3>
+            <p>{{servicio.body}}</p>
+            <img [src]="servicio.image">
+            <blockquote class="blockquote">{{servicio.author}}</blockquote>
+            <p>{{servicio.category}}</p>
+            <p>{{servicio.createdAt}}</p>
+        </div>
+    </div>
+</div>
